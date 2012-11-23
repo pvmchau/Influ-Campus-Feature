@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Campus Content Type feature.
+ */
+
+include_once 'campus_content_type.features.inc';

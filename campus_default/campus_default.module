@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Campus Default feature.
+ */
+
+include_once 'campus_default.features.inc';

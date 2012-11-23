@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Campus Views feature.
+ */
+
+include_once 'campus_views.features.inc';

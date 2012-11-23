@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Campus Demo Content feature.
+ */
+
+include_once 'campus_demo_content.features.inc';

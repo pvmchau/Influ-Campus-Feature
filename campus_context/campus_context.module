@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Campus Context feature.
+ */
+
+include_once 'campus_context.features.inc';
