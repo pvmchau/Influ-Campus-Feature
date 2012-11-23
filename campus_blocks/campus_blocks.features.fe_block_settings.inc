@@ -14,6 +14,30 @@ function campus_blocks_default_fe_block_settings() {
 
   // Theme independent visibility settings.
   $export['visibility'] = array(
+    'block-campus_address' => array(
+      'machine_name' => 'campus_address',
+      'module' => 'block',
+    ),
+    'block-campus_copyright_menu' => array(
+      'machine_name' => 'campus_copyright_menu',
+      'module' => 'block',
+    ),
+    'block-campus_current' => array(
+      'machine_name' => 'campus_current',
+      'module' => 'block',
+    ),
+    'block-campus_dropdown_menu' => array(
+      'machine_name' => 'campus_dropdown_menu',
+      'module' => 'block',
+    ),
+    'block-campus_new_influencer' => array(
+      'machine_name' => 'campus_new_influencer',
+      'module' => 'block',
+    ),
+    'block-campus_service_time' => array(
+      'machine_name' => 'campus_service_time',
+      'module' => 'block',
+    ),
     'block-dashboard_user_menu' => array(
       'machine_name' => 'dashboard_user_menu',
       'module' => 'block',
@@ -161,6 +185,120 @@ function campus_blocks_default_fe_block_settings() {
 
   // admintheme
   $theme = array();
+
+  $theme['block-campus_copyright_menu'] = array(
+    'module' => 'block',
+    'theme' => 'admintheme',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => 'admin
+admin/*
+user/*/edit
+vc/dashboard
+vc/contents
+vc/site_settings',
+    'title' => '',
+    'cache' => -1,
+    'machine_name' => 'campus_copyright_menu',
+  );
+
+  $theme['block-campus_address'] = array(
+    'module' => 'block',
+    'theme' => 'admintheme',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => 'admin/*
+admin
+user/*/edit
+vc/dashboard
+vc/contents
+vc/site_settings',
+    'title' => '<none>',
+    'cache' => -1,
+    'machine_name' => 'campus_address',
+  );
+
+  $theme['block-campus_service_time'] = array(
+    'module' => 'block',
+    'theme' => 'admintheme',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => 'admin
+admin/*
+user/*/edit
+vc/dashboard
+vc/contents
+vc/site_settings',
+    'title' => '',
+    'cache' => -1,
+    'machine_name' => 'campus_service_time',
+  );
+
+  $theme['block-campus_new_influencer'] = array(
+    'module' => 'block',
+    'theme' => 'admintheme',
+    'status' => 0,
+    'weight' => '-14',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => 'admin
+admin/*
+user/*/edit
+vc/dashboard
+vc/contents
+vc/site_settings',
+    'title' => '<none>',
+    'cache' => -1,
+    'machine_name' => 'campus_new_influencer',
+  );
+
+  $theme['block-campus_current'] = array(
+    'module' => 'block',
+    'theme' => 'admintheme',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => 'admin
+admin/*
+user/*/edit
+vc/dashboard
+vc/contents
+vc/site_settings',
+    'title' => '',
+    'cache' => -1,
+    'machine_name' => 'campus_current',
+  );
+
+  $theme['block-campus_dropdown_menu'] = array(
+    'module' => 'block',
+    'theme' => 'admintheme',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => 'admin
+admin/*
+user/*/edit
+vc/dashboard
+vc/contents
+vc/site_settings',
+    'title' => 'Dropdown mennu',
+    'cache' => -1,
+    'machine_name' => 'campus_dropdown_menu',
+  );
 
   $theme['block-dashboard_user_menu'] = array(
     'module' => 'block',
@@ -678,6 +816,120 @@ vc/site_settings',
   // bartik
   $theme = array();
 
+  $theme['block-campus_copyright_menu'] = array(
+    'module' => 'block',
+    'theme' => 'bartik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => 'admin
+admin/*
+user/*/edit
+vc/dashboard
+vc/contents
+vc/site_settings',
+    'title' => '',
+    'cache' => -1,
+    'machine_name' => 'campus_copyright_menu',
+  );
+
+  $theme['block-campus_address'] = array(
+    'module' => 'block',
+    'theme' => 'bartik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => 'admin/*
+admin
+user/*/edit
+vc/dashboard
+vc/contents
+vc/site_settings',
+    'title' => '<none>',
+    'cache' => -1,
+    'machine_name' => 'campus_address',
+  );
+
+  $theme['block-campus_service_time'] = array(
+    'module' => 'block',
+    'theme' => 'bartik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => 'admin
+admin/*
+user/*/edit
+vc/dashboard
+vc/contents
+vc/site_settings',
+    'title' => '',
+    'cache' => -1,
+    'machine_name' => 'campus_service_time',
+  );
+
+  $theme['block-campus_new_influencer'] = array(
+    'module' => 'block',
+    'theme' => 'bartik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => 'admin
+admin/*
+user/*/edit
+vc/dashboard
+vc/contents
+vc/site_settings',
+    'title' => '<none>',
+    'cache' => -1,
+    'machine_name' => 'campus_new_influencer',
+  );
+
+  $theme['block-campus_current'] = array(
+    'module' => 'block',
+    'theme' => 'bartik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => 'admin
+admin/*
+user/*/edit
+vc/dashboard
+vc/contents
+vc/site_settings',
+    'title' => '',
+    'cache' => -1,
+    'machine_name' => 'campus_current',
+  );
+
+  $theme['block-campus_dropdown_menu'] = array(
+    'module' => 'block',
+    'theme' => 'bartik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => 'admin
+admin/*
+user/*/edit
+vc/dashboard
+vc/contents
+vc/site_settings',
+    'title' => 'Dropdown mennu',
+    'cache' => -1,
+    'machine_name' => 'campus_dropdown_menu',
+  );
+
   $theme['block-dashboard_user_menu'] = array(
     'module' => 'block',
     'theme' => 'bartik',
@@ -1194,6 +1446,120 @@ vc/site_settings',
   // influencerschurch
   $theme = array();
 
+  $theme['block-campus_copyright_menu'] = array(
+    'module' => 'block',
+    'theme' => 'influencerschurch',
+    'status' => '1',
+    'weight' => '0',
+    'region' => 'footer_second',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => 'admin
+admin/*
+user/*/edit
+vc/dashboard
+vc/contents
+vc/site_settings',
+    'title' => '',
+    'cache' => -1,
+    'machine_name' => 'campus_copyright_menu',
+  );
+
+  $theme['block-campus_address'] = array(
+    'module' => 'block',
+    'theme' => 'influencerschurch',
+    'status' => '1',
+    'weight' => '0',
+    'region' => 'user_first',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => 'admin/*
+admin
+user/*/edit
+vc/dashboard
+vc/contents
+vc/site_settings',
+    'title' => '<none>',
+    'cache' => -1,
+    'machine_name' => 'campus_address',
+  );
+
+  $theme['block-campus_service_time'] = array(
+    'module' => 'block',
+    'theme' => 'influencerschurch',
+    'status' => '1',
+    'weight' => '0',
+    'region' => 'user_second',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => 'admin
+admin/*
+user/*/edit
+vc/dashboard
+vc/contents
+vc/site_settings',
+    'title' => '',
+    'cache' => -1,
+    'machine_name' => 'campus_service_time',
+  );
+
+  $theme['block-campus_new_influencer'] = array(
+    'module' => 'block',
+    'theme' => 'influencerschurch',
+    'status' => '1',
+    'weight' => '-14',
+    'region' => 'branding',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => 'admin
+admin/*
+user/*/edit
+vc/dashboard
+vc/contents
+vc/site_settings',
+    'title' => '<none>',
+    'cache' => -1,
+    'machine_name' => 'campus_new_influencer',
+  );
+
+  $theme['block-campus_current'] = array(
+    'module' => 'block',
+    'theme' => 'influencerschurch',
+    'status' => '1',
+    'weight' => '0',
+    'region' => 'menu',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => 'admin
+admin/*
+user/*/edit
+vc/dashboard
+vc/contents
+vc/site_settings',
+    'title' => '',
+    'cache' => -1,
+    'machine_name' => 'campus_current',
+  );
+
+  $theme['block-campus_dropdown_menu'] = array(
+    'module' => 'block',
+    'theme' => 'influencerschurch',
+    'status' => '1',
+    'weight' => '0',
+    'region' => 'menu',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => 'admin
+admin/*
+user/*/edit
+vc/dashboard
+vc/contents
+vc/site_settings',
+    'title' => 'Dropdown mennu',
+    'cache' => -1,
+    'machine_name' => 'campus_dropdown_menu',
+  );
+
   $theme['block-dashboard_user_menu'] = array(
     'module' => 'block',
     'theme' => 'influencerschurch',
@@ -1709,6 +2075,120 @@ vc/site_settings',
 
   // seven
   $theme = array();
+
+  $theme['block-campus_copyright_menu'] = array(
+    'module' => 'block',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => 'admin
+admin/*
+user/*/edit
+vc/dashboard
+vc/contents
+vc/site_settings',
+    'title' => '',
+    'cache' => -1,
+    'machine_name' => 'campus_copyright_menu',
+  );
+
+  $theme['block-campus_address'] = array(
+    'module' => 'block',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => 'admin/*
+admin
+user/*/edit
+vc/dashboard
+vc/contents
+vc/site_settings',
+    'title' => '<none>',
+    'cache' => -1,
+    'machine_name' => 'campus_address',
+  );
+
+  $theme['block-campus_service_time'] = array(
+    'module' => 'block',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => 'admin
+admin/*
+user/*/edit
+vc/dashboard
+vc/contents
+vc/site_settings',
+    'title' => '',
+    'cache' => -1,
+    'machine_name' => 'campus_service_time',
+  );
+
+  $theme['block-campus_new_influencer'] = array(
+    'module' => 'block',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => 'admin
+admin/*
+user/*/edit
+vc/dashboard
+vc/contents
+vc/site_settings',
+    'title' => '<none>',
+    'cache' => -1,
+    'machine_name' => 'campus_new_influencer',
+  );
+
+  $theme['block-campus_current'] = array(
+    'module' => 'block',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => 'admin
+admin/*
+user/*/edit
+vc/dashboard
+vc/contents
+vc/site_settings',
+    'title' => '',
+    'cache' => -1,
+    'machine_name' => 'campus_current',
+  );
+
+  $theme['block-campus_dropdown_menu'] = array(
+    'module' => 'block',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => 'admin
+admin/*
+user/*/edit
+vc/dashboard
+vc/contents
+vc/site_settings',
+    'title' => 'Dropdown mennu',
+    'cache' => -1,
+    'machine_name' => 'campus_dropdown_menu',
+  );
 
   $theme['block-dashboard_user_menu'] = array(
     'module' => 'block',

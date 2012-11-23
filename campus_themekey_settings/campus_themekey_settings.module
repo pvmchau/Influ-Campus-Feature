@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Campus Themekey Settings feature.
+ */
+
+include_once 'campus_themekey_settings.features.inc';

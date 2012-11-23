@@ -1,0 +1,15 @@
+name = Campus Themekey Settings
+description = Themekey settings
+core = 7.x
+package = Features
+version = 7.x-2.0
+project = campus_themekey_settings
+dependencies[] = themekey
+dependencies[] = themekey_features
+features[features_api][] = api:1
+features[themekey_features_rule_chain][] = drupal:path = admin/structure/fieldable-panels-panes/view/% >>> ... rule cascade
+features[themekey_features_rule_chain][] = drupal:path = node/%/edit >>> ... rule cascade
+features[themekey_features_rule_chain][] = drupal:path = node/add/% >>> ... rule cascade
+features[themekey_features_rule_chain][] = drupal:path = user/% >>> ... rule cascade
+features[themekey_features_rule_chain][] = drupal:path = vc/% >>> ... rule cascade
+features[themekey_features_rule_chain][] = drupal:path:wildcard themekey_compat:module_system_triggers_theme = static >>> default
