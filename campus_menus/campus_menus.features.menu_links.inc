@@ -137,7 +137,7 @@ function campus_menus_menu_default_menu_links() {
     'module' => 'menu',
     'hidden' => '0',
     'external' => '0',
-    'has_children' => '0',
+    'has_children' => '1',
     'expanded' => '0',
     'weight' => '-46',
   );
@@ -613,24 +613,6 @@ function campus_menus_menu_default_menu_links() {
     'expanded' => '0',
     'weight' => '-48',
   );
-  // Exported menu link: menu-homepage-news-box:<front>
-  $menu_links['menu-homepage-news-box:<front>'] = array(
-    'menu_name' => 'menu-homepage-news-box',
-    'link_path' => '<front>',
-    'router_path' => '',
-    'link_title' => 'Paradise Album Out Now!',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-    ),
-    'module' => 'menu',
-    'hidden' => '0',
-    'external' => '1',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '-50',
-  );
   // Exported menu link: menu-homepage-news-box:devotions_online
   $menu_links['menu-homepage-news-box:devotions_online'] = array(
     'menu_name' => 'menu-homepage-news-box',
@@ -685,6 +667,42 @@ function campus_menus_menu_default_menu_links() {
     'expanded' => '0',
     'weight' => '-47',
   );
+  // Exported menu link: menu-homepage-news-box:store
+  $menu_links['menu-homepage-news-box:store'] = array(
+    'menu_name' => 'menu-homepage-news-box',
+    'link_path' => 'store',
+    'router_path' => 'store',
+    'link_title' => 'Paradise Album',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+    ),
+    'module' => 'menu',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '-50',
+  );
+  // Exported menu link: menu-influncer-campus:<front>
+  $menu_links['menu-influncer-campus:<front>'] = array(
+    'menu_name' => 'menu-influncer-campus',
+    'link_path' => '<front>',
+    'router_path' => '',
+    'link_title' => 'Australia',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+    ),
+    'module' => 'menu',
+    'hidden' => '0',
+    'external' => '1',
+    'has_children' => '1',
+    'expanded' => '1',
+    'weight' => '-50',
+  );
   // Exported menu link: menu-social-network-link:<front>
   $menu_links['menu-social-network-link:<front>'] = array(
     'menu_name' => 'menu-social-network-link',
@@ -702,6 +720,7 @@ function campus_menus_menu_default_menu_links() {
     'has_children' => '0',
     'expanded' => '0',
     'weight' => '-50',
+    'parent_path' => '<front>',
   );
   // Exported menu link: menu-social-network-link:http://vimeo.com/
   $menu_links['menu-social-network-link:http://vimeo.com/'] = array(
@@ -719,7 +738,8 @@ function campus_menus_menu_default_menu_links() {
     'external' => '1',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-45',
+    'weight' => '-48',
+    'parent_path' => '<front>',
   );
   // Exported menu link: menu-social-network-link:rss.xml
   $menu_links['menu-social-network-link:rss.xml'] = array(
@@ -737,10 +757,46 @@ function campus_menus_menu_default_menu_links() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-44',
+    'weight' => '-47',
+    'parent_path' => '<front>',
+  );
+  // Exported menu link: user-menu:user
+  $menu_links['user-menu:user'] = array(
+    'menu_name' => 'user-menu',
+    'link_path' => 'user',
+    'router_path' => 'user',
+    'link_title' => 'Account Settings',
+    'options' => array(
+      'alter' => TRUE,
+      'attributes' => array(
+        'title' => '',
+      ),
+    ),
+    'module' => 'system',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '-10',
+  );
+  // Exported menu link: user-menu:user/logout
+  $menu_links['user-menu:user/logout'] = array(
+    'menu_name' => 'user-menu',
+    'link_path' => 'user/logout',
+    'router_path' => 'user/logout',
+    'link_title' => 'Log out',
+    'options' => array(),
+    'module' => 'system',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '10',
   );
   // Translatables
   // Included for use with string extractors like potx.
+  t('Account Settings');
+  t('Australia');
   t('Campuses');
   t('Concierge');
   t('Content');
@@ -752,9 +808,10 @@ function campus_menus_menu_default_menu_links() {
   t('Groups');
   t('Influencers Live');
   t('Location');
+  t('Log out');
   t('Ministries');
   t('Onling Giving');
-  t('Paradise Album Out Now!');
+  t('Paradise Album');
   t('Paradise TV Online');
   t('Podcast Download');
   t('Podcasts');

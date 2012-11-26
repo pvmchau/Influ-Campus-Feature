@@ -11,46 +11,15 @@ function campus_blocks_default_fe_block_boxes() {
   $export = array();
 
   $fe_block_boxes = new stdClass();
-  $fe_block_boxes->info = 'Campus Address';
-  $fe_block_boxes->format = 'full_html';
-  $fe_block_boxes->machine_name = 'campus_address';
-  $fe_block_boxes->body = '<div class="campus_address">
-	<div class="title">
-		Address</div>
-	<div class="address">
-		The Palm Centre Cnr Rokeby and Nicholson Rds Subiaco WA</div>
-</div>
-<p>Warning: file_exists(): open_basedir restriction in effect. File(/home/langgo/influencerschurch/includes/database/query.inc) is not within the allowed path(s): (.:/data:/mnt:/opt:/srv:/tmp:/usr:/var/aegir:/var/lib/collectd:/var/lib/nginx:/var/run:/var/second:/var/www) in /home/langgo/influencerschurch/includes/database/database.inc on line 1744 Warning: file_exists(): open_basedir restriction in effect. File(/home/langgo/influencerschurch/includes/database/mysql/query.inc) is not within the allowed path(s): (.:/data:/mnt:/opt:/srv:/tmp:/usr:/var/aegir:/var/lib/collectd:/var/lib/nginx:/var/run:/var/second:/var/www) in /home/langgo/influencerschurch/includes/database/database.inc on line 1744</p>
-';
-
-  $export['campus_address'] = $fe_block_boxes;
-
-  $fe_block_boxes = new stdClass();
   $fe_block_boxes->info = 'Site copyright';
   $fe_block_boxes->format = 'filtered_html';
   $fe_block_boxes->machine_name = 'campus_copyright_menu';
   $fe_block_boxes->body = '<div class="influ_copyright">
-	<p class="copyright">Copyright &copy; 2012.</p>
-	<p class="copy_link"><a href="http://influencerschurch-vcdev.rhcloud.com">Disclaimer </a>| <a href="http://influencerschurch-vcdev.rhcloud.com">Privacy Policy</a> | <a href="http://influencerschurch-vcdev.rhcloud.com">Term &amp; Conditions</a></p>
-</div>
-<p>Warning: file_exists(): open_basedir restriction in effect. File(/home/langgo/influencerschurch/includes/database/query.inc) is not within the allowed path(s): (.:/data:/mnt:/opt:/srv:/tmp:/usr:/var/aegir:/var/lib/collectd:/var/lib/nginx:/var/run:/var/second:/var/www) in /home/langgo/influencerschurch/includes/database/database.inc on line 1744 Warning: file_exists(): open_basedir restriction in effect. File(/home/langgo/influencerschurch/includes/database/mysql/query.inc) is not within the allowed path(s): (.:/data:/mnt:/opt:/srv:/tmp:/usr:/var/aegir:/var/lib/collectd:/var/lib/nginx:/var/run:/var/second:/var/www) in /home/langgo/influencerschurch/includes/database/database.inc on line 1744</p>
-';
+	<p class="copyright">Copyright &copy; 2009 - 2012. Paradise Community Church. All rights reserved.</p>
+	<p class="copy_link"><a href=/>Disclaimer </a>| <a href=/>Privacy Policy</a></p>
+</div>';
 
   $export['campus_copyright_menu'] = $fe_block_boxes;
-
-  $fe_block_boxes = new stdClass();
-  $fe_block_boxes->info = 'Current campus block';
-  $fe_block_boxes->format = 'full_html';
-  $fe_block_boxes->machine_name = 'campus_current';
-  $fe_block_boxes->body = '<div class="current_campus">
-	<div class="title">
-		Campus:</div>
-	<div class="campus_name">
-		Atlanta</div>
-</div>
-';
-
-  $export['campus_current'] = $fe_block_boxes;
 
   $fe_block_boxes = new stdClass();
   $fe_block_boxes->info = 'Dropdown menu in navigation';
@@ -160,29 +129,6 @@ function campus_blocks_default_fe_block_boxes() {
 ';
 
   $export['campus_new_influencer'] = $fe_block_boxes;
-
-  $fe_block_boxes = new stdClass();
-  $fe_block_boxes->info = 'Campus Service Times';
-  $fe_block_boxes->format = 'full_html';
-  $fe_block_boxes->machine_name = 'campus_service_time';
-  $fe_block_boxes->body = '<div class="campus_service_times">
-	<div class="title">
-		Service Times</div>
-	<ul class="times">
-		<li>
-			9:30 AM</li>
-		<li>
-			11:30 AM</li>
-		<li>
-			5:30 PM</li>
-		<li>
-			7:30 PM</li>
-	</ul>
-</div>
-<p>&nbsp;</p>
-';
-
-  $export['campus_service_time'] = $fe_block_boxes;
 
   $fe_block_boxes = new stdClass();
   $fe_block_boxes->info = 'Display user link in Dashboard Header';

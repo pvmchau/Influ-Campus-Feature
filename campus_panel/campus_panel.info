@@ -22,6 +22,7 @@ features[page_manager_pages][] = homepage
 features[page_manager_pages][] = im_new
 features[page_manager_pages][] = influ_content_manager
 features[page_manager_pages][] = influencers_live
+features[page_manager_pages][] = inlfu_global_home_page
 features[page_manager_pages][] = location
 features[page_manager_pages][] = podcasts
 features[page_manager_pages][] = services
